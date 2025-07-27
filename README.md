@@ -19,6 +19,7 @@ You can copy this entire component and use it in your React app (e.g., Next.js o
 
 
 tsx
+
 import React, { useState } from "react";
 
 type EnvVar = {
@@ -177,22 +178,25 @@ export default function EnvVarEditor() {
 }
 
 
+
+‐-------‐---------------‐---------‐-‐--‐----------‐-------‐---‐--‐---‐--‐----
+
 How to use this:
-Copy this code into a React/Next.js project as a component (e.g., EnvVarEditor.tsx).
+1.Copy this code into a React/Next.js project as a component (e.g., EnvVarEditor.tsx).
 
-Import it into a page or other component and render <EnvVarEditor />.
+2.Import it into a page or other component and render <EnvVarEditor />.
 
-Paste your .env file as multiline text into the top input box.
+3.Paste your .env file as multiline text into the top input box.
 
-The table will populate with each key/value pair.
+4.The table will populate with each key/value pair.
 
-You can edit, add, or remove variables.
+5.You can edit, add, or remove variables.
 
-The bottom <pre> shows a live .env file preview you can copy to save or paste elsewhere.
+6.The bottom <pre> shows a live .env file preview you can copy to save or paste elsewhere.
 
 
 
-‐‐---------------------‐---------------
+‐‐---------------------‐-----------------------------------------------‐-----
 
 Here’s how to integrate the full environment variable editor UI directly into your Next.js app, plus guidance for customizing its style.
 
@@ -202,7 +206,10 @@ Place the environment variable editor component in your codebase and render it a
 a. Create the Component
 Save this as /components/EnvVarEditor.tsx:
 
+----------------------------‐-----‐---------‐‐
+
 tsx
+
 "use client";
 import React, { useState } from "react";
 
